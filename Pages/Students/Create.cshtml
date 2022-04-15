@@ -1,16 +1,17 @@
 ﻿@page
+@using SESEWebsite.Models.Enum
 @model SESEWebsite.Pages.Students.CreateModel
 
 @{
     ViewData["Title"] = "Register";
 }
-
 <h1>Welcome To Sambauna English Academy Registration Portal</h1>
 
 <h4>Register</h4>
 <hr />
 <div class="container">
-        <form method="post" class="row">
+        <form enctype="multipart/form-data" method="post" class="row">
+
             <div class="container row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -20,7 +21,9 @@
                 <input asp-for="Register.FirstName" class="form-control" />
                 <span asp-validation-for="Register.FirstName" class="text-danger"></span>
             </div>
+
             </div>
+
             <div class="form-group col">
                 <label asp-for="Register.LastName" class="control-label"></label>
                 <input asp-for="Register.LastName" class="form-control" />
@@ -55,6 +58,11 @@
                 <input asp-for="Register.Email" class="form-control" />
                 <span asp-validation-for="Register.Email" class="text-danger"></span>
             </div>
+             <div class="form-group">
+                <label asp-for="Register.Program" class="control-label"></label>
+                <select asp-for="Register.Program" class="form-control" asp-items="@Html.GetEnumSelectList<Programs>();"></select>
+                <span asp-validation-for="Register.Program" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Register.Password" class="control-label"></label>
                 <input asp-for="Register.Password" class="form-control" />
@@ -71,9 +79,7 @@
         </form>
 </div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

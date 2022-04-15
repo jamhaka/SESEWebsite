@@ -13,9 +13,9 @@ namespace SESEWebsite.Pages.Students
 {
     public class CreateModel : PageModel
     {
-        private readonly SESEWebsite.Data.SESEWebsiteContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
 
-        public CreateModel(SESEWebsite.Data.SESEWebsiteContext context)
+        public CreateModel(SESEWebsite.Data.SESEDbContext context)
         {
             _context = context;
         }
@@ -31,15 +31,15 @@ namespace SESEWebsite.Pages.Students
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 return Page();
             }
 
-            _context.Register.Add(Register);
+            _context.Registers.Add(Register);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./RegistrationResponse");
         }
     }
 }

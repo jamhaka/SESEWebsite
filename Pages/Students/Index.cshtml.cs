@@ -13,9 +13,9 @@ namespace SESEWebsite.Pages.Students
 {
     public class IndexModel : PageModel
     {
-        private readonly SESEWebsite.Data.SESEWebsiteContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
 
-        public IndexModel(SESEWebsite.Data.SESEWebsiteContext context)
+        public IndexModel(SESEWebsite.Data.SESEDbContext context)
         {
             _context = context;
         }
@@ -24,7 +24,7 @@ namespace SESEWebsite.Pages.Students
 
         public async Task OnGetAsync()
         {
-            Register = await _context.Register.ToListAsync();
+            Register = await _context.Registers.ToListAsync();
         }
     }
 }

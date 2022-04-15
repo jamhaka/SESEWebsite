@@ -14,9 +14,9 @@ namespace SESEWebsite.Pages.Students
 {
     public class EditModel : PageModel
     {
-        private readonly SESEWebsite.Data.SESEWebsiteContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
 
-        public EditModel(SESEWebsite.Data.SESEWebsiteContext context)
+        public EditModel(SESEWebsite.Data.SESEDbContext context)
         {
             _context = context;
         }
@@ -31,7 +31,7 @@ namespace SESEWebsite.Pages.Students
                 return NotFound();
             }
 
-            Register = await _context.Register.FirstOrDefaultAsync(m => m.Id == id);
+            Register = await _context.Registers.FirstOrDefaultAsync(m => m.Id == id);
 
             if (Register == null)
             {
@@ -72,7 +72,7 @@ namespace SESEWebsite.Pages.Students
 
         private bool RegisterExists(int id)
         {
-            return _context.Register.Any(e => e.Id == id);
+            return _context.Registers.Any(e => e.Id == id);
         }
     }
 }

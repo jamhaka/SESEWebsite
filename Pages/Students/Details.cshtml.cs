@@ -13,9 +13,9 @@ namespace SESEWebsite.Pages.Students
 {
     public class DetailsModel : PageModel
     {
-        private readonly SESEWebsite.Data.SESEWebsiteContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
 
-        public DetailsModel(SESEWebsite.Data.SESEWebsiteContext context)
+        public DetailsModel(SESEWebsite.Data.SESEDbContext context)
         {
             _context = context;
         }
@@ -29,7 +29,7 @@ namespace SESEWebsite.Pages.Students
                 return NotFound();
             }
 
-            Register = await _context.Register.FirstOrDefaultAsync(m => m.Id == id);
+            Register = await _context.Registers.FirstOrDefaultAsync(m => m.Id == id);
 
             if (Register == null)
             {

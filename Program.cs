@@ -2,27 +2,28 @@
 using Microsoft.EntityFrameworkCore;
 using SESEWebsite.Data;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<SESEWebsiteContext>(options =>
-    options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<SESEDbContext>(options => options.UseSqlServer(connectionString));
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<SESEWebsiteContext>();
+    .AddEntityFrameworkStores<SESEDbContext>();
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddRazorPages();
 
-builder.Services.AddDbContext<SESEWebsiteContext>(options =>
-
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SESEWebsiteContext")));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsProduction())
 {
     app.UseMigrationsEndPoint();
 }

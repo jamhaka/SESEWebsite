@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Error.cshtml]
@@ -37,6 +37,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/RegistrationResponse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcUmVnaXN0cmF0aW9uUmVzcG9uc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/_ViewImports.cshtml]

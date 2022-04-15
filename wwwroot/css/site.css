@@ -15,6 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  
 }
 h1{
     color:maroon;
@@ -47,4 +48,7 @@ h2{
     align-content:center;
     color:black;
     text-align:center;
+}
+im{
+    align-content:flex-start;
 }

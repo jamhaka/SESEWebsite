@@ -13,9 +13,9 @@ namespace SESEWebsite.Pages.Students
 {
     public class DeleteModel : PageModel
     {
-        private readonly SESEWebsite.Data.SESEWebsiteContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
 
-        public DeleteModel(SESEWebsite.Data.SESEWebsiteContext context)
+        public DeleteModel(SESEWebsite.Data.SESEDbContext context)
         {
             _context = context;
         }
@@ -30,7 +30,7 @@ namespace SESEWebsite.Pages.Students
                 return NotFound();
             }
 
-            Register = await _context.Register.FirstOrDefaultAsync(m => m.Id == id);
+            Register = await _context.Registers.FirstOrDefaultAsync(m => m.Id == id);
 
             if (Register == null)
             {
@@ -46,11 +46,11 @@ namespace SESEWebsite.Pages.Students
                 return NotFound();
             }
 
-            Register = await _context.Register.FindAsync(id);
+            Register = await _context.Registers.FindAsync(id);
 
             if (Register != null)
             {
-                _context.Register.Remove(Register);
+                _context.Registers.Remove(Register);
                 await _context.SaveChangesAsync();
             }
 
