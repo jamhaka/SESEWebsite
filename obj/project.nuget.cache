@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hwOPHo2vkmOYMo1wLrqxGZc1OLpe6gvtySS2prBaIvL3uNENSZ/Hbh7wHDNDAKVKgzrgaQk7MScrKq4YzzYqkg==",
+  "dgSpecHash": "1cBR1XAO9xncFXcBIN8+uDrCqw8upeh3Un7B91Nz0WI83DocWdd6CkMns9kpfcXQ8BhnAQf2TWQrwBmZvYVe5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\SESEWebsite.csproj",
   "expectedPackageFiles": [
@@ -56,12 +56,12 @@
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
-    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.2\\microsoft.entityframeworkcore.design.6.0.2.nupkg.sha512",
+    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.3\\microsoft.entityframeworkcore.sqlite.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.3\\microsoft.entityframeworkcore.sqlite.core.6.0.3.nupkg.sha512",
-    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.0\\microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
-    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.2\\microsoft.entityframeworkcore.tools.6.0.2.nupkg.sha512",
+    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
+    "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

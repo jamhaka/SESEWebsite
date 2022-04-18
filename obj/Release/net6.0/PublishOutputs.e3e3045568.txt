@@ -1,8 +1,6 @@
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\SESEWebsite.exe
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\appsettings.json
-C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\Data\Registration.json
-C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\Service\jsonRegistrationService.json
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\SESEWebsite.dll
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\SESEWebsite.runtimeconfig.json
 C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\PubTmp\Out\SESEWebsite.pdb

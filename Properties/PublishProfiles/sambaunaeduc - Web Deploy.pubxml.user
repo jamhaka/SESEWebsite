@@ -6,7 +6,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAP9SM27lpIkmhqTGgTBwD7wAAAAACAAAAAAAQZgAAAAEAACAAAADTaK1cVYbD8XV2FBpnEmOWW7fjQgi088zKlrD4jECLAgAAAAAOgAAAAAIAACAAAADim+4abJPyhpESPKxYyWcjszMc2jaU/veoqwNOy+W9CoAAAAAjhfop9P0wYeySvk1gDHxo7RTxsOSnjsV+dm7vySlB+zSLc2ZvqLObEFobmh06vA3UuOfh16dIhx239grKidzWUW4GVdL5ehnjKHOAk8Tx5kClQ3/dZ+29st5bTF9s7vV4+FtZf4BR1C9czeYhozO9OzmZcL+DA/0UuP33BXTD9kAAAACAB/A6WmQ7xp8ObVhNru/aGl7TVw019B1pqdYkFPKtvfcnxPGPj+WfmG4xqDsOe+/VT5D/zZfN5t8GX3or3Xkk</EncryptedPassword>
-    <History>True|2022-04-13T15:21:36.2910632Z;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAP9SM27lpIkmhqTGgTBwD7wAAAAACAAAAAAAQZgAAAAEAACAAAAB63rrawh16bH8twXwRfqpMNwRnMqwyv/1fh6UUWj4DtAAAAAAOgAAAAAIAACAAAAAS+zOJdUT8cEC8BN6whiMaRMr03Tqvordr73Tn3SKLx4AAAAC9VQXVHBxC7NoC5AhDUdCFkbhmQ+8Uk2nfaRc/ikisnACYpacpXCuGF6t35/dNHJY2KYDfy+IrhuuxCVcM1dMEL7Oc4XZpQWxvrDOuPjJQTEJus2xaNiYjgAIBtgA3EBzcJ9FrqdpZdh1tt74Quk3KpHxAzvdrszR/DYmXDfrzT0AAAADzMU4GUcwfbCkuopAlrO7PEjMIJXj6zQVVtzmVaLOoTMDt47eS3qx4NiKisluOTWgCzq6zlJrR2UalY/fsddp7</EncryptedPassword>
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:sambaunaeducationalservicedbserver.database.windows.net,1433%3bInitial Catalog=RealSeseDatabase_db%3bPersist Security Info=False%3bUser ID=JamhakaTechnology%3bPassword=Jamhaka1986%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="SESEWebsite.Data.SESEDbContext">
+      <Value>Server=tcp:sambaunaeducationalservicedbserver.database.windows.net,1433%3bInitial Catalog=RealSeseDatabase_db%3bPersist Security Info=False%3bUser ID=JamhakaTechnology%3bPassword=Jamhaka1986%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
 </Project>

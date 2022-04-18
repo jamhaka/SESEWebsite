@@ -1,4 +1,6 @@
-﻿namespace SESEWebsite.Models
+﻿using SESEWebsite.Models.Enum;
+
+namespace SESEWebsite.Models
 {
     public class Course
     {
@@ -7,6 +9,8 @@
         public string Name { get; set; }
         public string Title { get; set; }
         public string Instructors { get; set; }
+        public CreditEnum Creadits { get; set; }
+        
         //Navigation property
         public virtual Instructor Instructor { get; set; }
 

@@ -3,4 +3,7 @@
   <parameter name="IIS Web Application Name" description="" value="sambaunaeduc" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\JAS\ CAFE\.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
   </parameter>
+  <parameter name="SESEWebsite.Data.SESEDbContext" description="" value="Server=tcp:sambaunaeducationalservicedbserver.database.windows.net,1433;Initial Catalog=RealSeseDatabase_db;Persist Security Info=False;User ID=JamhakaTechnology;Password=Jamhaka1986;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\JAS\ CAFE\.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\SESEWebsite\.Data\.SESEDbContext\.sql$" />
+  </parameter>
 </parameters>
