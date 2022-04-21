@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<SESEDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -24,16 +25,19 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsProduction())
+
+
 {
-    app.UseExceptionHandler("/Error");
+    app.UseDeveloperExceptionPage();
+   
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
     
 }
 else
 {
-    app.UseDeveloperExceptionPage();
-    app.UseMigrationsEndPoint();
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
+
 }
 
 app.UseHttpsRedirection();

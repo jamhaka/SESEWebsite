@@ -116,3 +116,106 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    EXEC sp_rename N'[Instructors].[Name]', N'SurName', N'COLUMN';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Students] ADD [EnrollmentsId] int NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Registers] ADD [IsDeleted] bit NOT NULL DEFAULT CAST(0 AS bit);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Registers] ADD [Mode] int NOT NULL DEFAULT 0;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Registers] ADD [ProposedClass] int NOT NULL DEFAULT 0;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Registers] ADD [RegistredDate] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Instructors] ADD [BIO] nvarchar(max) NOT NULL DEFAULT N'';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Instructors] ADD [FName] nvarchar(max) NOT NULL DEFAULT N'';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Instructors] ADD [IsDeleted] bit NOT NULL DEFAULT CAST(0 AS bit);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Instructors] ADD [RegistredDate] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Enrollments] ADD [IsDeleted] bit NOT NULL DEFAULT CAST(0 AS bit);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Enrollments] ADD [RegistredDate] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Courses] ADD [Creadits] int NOT NULL DEFAULT 0;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    CREATE INDEX [IX_Students_EnrollmentsId] ON [Students] ([EnrollmentsId]);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    ALTER TABLE [Students] ADD CONSTRAINT [FK_Students_Enrollments_EnrollmentsId] FOREIGN KEY ([EnrollmentsId]) REFERENCES [Enrollments] ([Id]);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220419153033_[About]', N'6.0.3');
+END;
+GO
+
+COMMIT;
+GO
+

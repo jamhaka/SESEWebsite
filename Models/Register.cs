@@ -1,14 +1,14 @@
-﻿using SESEWebsite.Models.Enum;
+﻿using SESEWebsite.Data;
+using SESEWebsite.Models.Enum;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SESEWebsite.Models
 {
-    public class Register
+    public class Register:Base
     {
-        [Key]
-        public int Id { get; set; } 
-        [Required]       
+                 
+             
         [NotMapped]
         public IFormFile Photo { get; set; }
         [Required]
@@ -30,8 +30,10 @@ namespace SESEWebsite.Models
 
         [Required]
         public Programs Program { get; set; }
-         
-        
+        public StudyMode Mode { get; set; } 
+        public ClassCategories ProposedClass { get; set; }
+
+
         [Required]
         [DataType(DataType.Password, ErrorMessage ="Wrong Password")]
         public string Password { get; set; } = string.Empty;

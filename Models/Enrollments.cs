@@ -1,12 +1,16 @@
-﻿namespace SESEWebsite.Models
+﻿using SESEWebsite.Data;
+
+namespace SESEWebsite.Models
 {
-    public class Enrollments
+    public class Enrollments:Base
     {
-        public int Id { get; set; }
+        
         public int CourseId {get; set;}
         public int StudentId {get; set;}    
         //Navigation Properties
         public Student? student { get; set; }
         public Course course { get; set; }
+
+        public ICollection<Student> students { get; set;}
     }
 }

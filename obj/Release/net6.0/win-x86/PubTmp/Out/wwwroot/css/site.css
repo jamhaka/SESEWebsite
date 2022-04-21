@@ -1,0 +1,54 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  
+}
+h1{
+    color:maroon;
+    text-align:center;
+}
+
+.w{
+    background-color:black;
+    color:white;
+    align-content:center;
+
+
+}
+.bc{
+    background-color:aqua;
+    color: white;
+    align-content: center;
+}
+.ln{
+    background-color:aliceblue;
+    color:red;
+
+}
+.Ad{
+
+    background-color:maroon;
+    color:white;
+}
+h2{
+    align-content:center;
+    color:black;
+    text-align:center;
+}
+im{
+    align-content:flex-start;
+}

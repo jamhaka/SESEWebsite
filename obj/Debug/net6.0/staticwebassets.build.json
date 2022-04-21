@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2SwDYThO8QoZoHccRq92EVIkDXCNsNUGO4cC/juwTnU=",
+  "Hash": "9YgSOPMkjfmFd24tE26MwJjRm/EOKDJFQPOFrNktNVw=",
   "Source": "SESEWebsite",
   "BasePath": "_content/SESEWebsite",
   "Mode": "Default",
@@ -1205,6 +1205,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\IMG-20220325-WA0016.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\wwwroot\\Images\\IMG-20220419-WA0011.jpg",
+      "SourceId": "SESEWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\wwwroot\\",
+      "BasePath": "_content/SESEWebsite",
+      "RelativePath": "Images/IMG-20220419-WA0011.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\IMG-20220419-WA0011.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\wwwroot\\Images\\Scan.jpg",
+      "SourceId": "SESEWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\wwwroot\\",
+      "BasePath": "_content/SESEWebsite",
+      "RelativePath": "Images/Scan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Scan.jpg"
     },
     {
       "Identity": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\wwwroot\\js\\site.js",

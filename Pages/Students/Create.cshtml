@@ -5,12 +5,29 @@
 @{
     ViewData["Title"] = "Register";
 }
-<h1>Welcome To Sambauna English Academy Registration Portal</h1>
+<div class="text-center">
+    <h1 class="im", im"><img src=/css/IMG-20220325-WA0016.jpg height= "100" class="im"  /></h1>
+    <p></p>
+</div>
 
 <h4>Register</h4>
 <hr />
 <div class="container">
         <form enctype="multipart/form-data" method="post" class="row">
+
+            <div class="container row">
+                <div class="form-group col">
+                <label asp-for="Register.Gender" class="control-label"></label>
+                <select asp-for="Register.Gender" class="form-control" asp-items="Html.GetEnumSelectList<GenderType>()"></select>
+                <span asp-validation-for="Register.Gender" class="text-danger"></span>
+            </div>
+             <div class="form-group col" >
+                <label asp-for="Register.Photo" class="control-label"></label>
+                <input asp-for="Register.Photo" class="form-control"/>
+                <span asp-validation-for="Register.Photo" class="text-danger"></span>
+            </div>
+
+            </div>
 
             <div class="container row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -36,12 +53,7 @@
             </div>
             </div>
             <div class="container row">
-
-            <div class="form-group col">
-                <label asp-for="Register.FullName" class="control-label"></label>
-                <input asp-for="Register.FullName" class="form-control" />
-                <span asp-validation-for="Register.FullName" class="text-danger"></span>
-            </div>
+                             
             <div class="form-group col">
                 <label asp-for="Register.DOB" class="control-label"></label>
                 <input asp-for="Register.DOB" class="form-control" />
@@ -53,22 +65,34 @@
                 <span asp-validation-for="Register.PhoneNumber" class="text-danger"></span>
             </div>
             </div>
-            <div class="form-group">
+            <div class="container row">
+             <div class="form-group col">
+                <label asp-for="Register.Program" class="control-label"></label>
+                <select asp-for="Register.Program" class="form-control" asp-items="Html.GetEnumSelectList<Programs>()"></select>
+                <span asp-validation-for="Register.Program" class="text-danger"></span>
+            </div>
+            <div class="form-group col">
+                <label asp-for="Register.Mode" class="control-label"></label>
+                <select asp-for="Register.Mode" class="form-control" asp-items="Html.GetEnumSelectList<StudyMode>();"></select>
+                <span asp-validation-for="Register.Mode" class="text-danger"></span>
+            </div>
+             <div class="form-group col">
+                <label asp-for="Register.ProposedClass" class="control-label"></label>
+                <select asp-for="Register.ProposedClass" class="form-control" asp-items="Html.GetEnumSelectList<ClassCategories>();"></select>
+                <span asp-validation-for="Register.ProposedClass" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-group col">
                 <label asp-for="Register.Email" class="control-label"></label>
                 <input asp-for="Register.Email" class="form-control" />
                 <span asp-validation-for="Register.Email" class="text-danger"></span>
             </div>
-             <div class="form-group">
-                <label asp-for="Register.Program" class="control-label"></label>
-                <select asp-for="Register.Program" class="form-control" asp-items="@Html.GetEnumSelectList<Programs>();"></select>
-                <span asp-validation-for="Register.Program" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            <div class="form-group col">
                 <label asp-for="Register.Password" class="control-label"></label>
                 <input asp-for="Register.Password" class="form-control" />
                 <span asp-validation-for="Register.Password" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group col">
                 <label asp-for="Register.ConfirmPassword" class="control-label"></label>
                 <input asp-for="Register.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Register.ConfirmPassword" class="text-danger"></span>

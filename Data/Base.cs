@@ -2,14 +2,16 @@
 {
     public class Base
     {
-        public Guid Id { get; set; }
-        public DateTime RegistredDate { get; set; }  
+        public int Id { get; init;}
+        public virtual DateTime RegistredDate { get; set; } 
+        public bool IsDeleted { get; set; } 
 
 
         public Base()
         {
-                Id = Guid.NewGuid();
+                Id = new();
             RegistredDate = DateTime.Now;
+            IsDeleted = false;
         }
     }
 }

@@ -43,6 +43,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\" />
+    <Folder Include="IRepositories\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

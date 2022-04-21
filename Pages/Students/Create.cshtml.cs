@@ -31,14 +31,13 @@ namespace SESEWebsite.Pages.Students
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
 
             _context.Registers.Add(Register);
             await _context.SaveChangesAsync();
-
             return RedirectToPage("./RegistrationResponse");
         }
     }

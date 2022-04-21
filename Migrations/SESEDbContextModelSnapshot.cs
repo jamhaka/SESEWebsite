@@ -34,6 +34,9 @@ namespace SESEWebsite.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Creadits")
+                        .HasColumnType("int");
+
                     b.Property<int>("InstructorId")
                         .HasColumnType("int");
 
@@ -67,8 +70,14 @@ namespace SESEWebsite.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("RegisterId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("RegistredDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
@@ -92,6 +101,10 @@ namespace SESEWebsite.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("BIO")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Course")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -99,7 +112,17 @@ namespace SESEWebsite.Migrations
                     b.Property<int>("Department")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("RegistredDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SurName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -137,9 +160,15 @@ namespace SESEWebsite.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Mode")
+                        .HasColumnType("int");
 
                     b.Property<string>("OtherName")
                         .HasColumnType("nvarchar(max)");
@@ -155,6 +184,12 @@ namespace SESEWebsite.Migrations
                     b.Property<int>("Program")
                         .HasColumnType("int");
 
+                    b.Property<int>("ProposedClass")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("RegistredDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Registers");
@@ -168,7 +203,12 @@ namespace SESEWebsite.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int?>("EnrollmentsId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("EnrollmentsId");
 
                     b.ToTable("Students");
                 });
@@ -205,6 +245,18 @@ namespace SESEWebsite.Migrations
                     b.Navigation("course");
 
                     b.Navigation("student");
+                });
+
+            modelBuilder.Entity("SESEWebsite.Models.Student", b =>
+                {
+                    b.HasOne("SESEWebsite.Models.Enrollments", null)
+                        .WithMany("students")
+                        .HasForeignKey("EnrollmentsId");
+                });
+
+            modelBuilder.Entity("SESEWebsite.Models.Enrollments", b =>
+                {
+                    b.Navigation("students");
                 });
 
             modelBuilder.Entity("SESEWebsite.Models.Instructor", b =>
