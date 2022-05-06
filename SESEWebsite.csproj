@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Controllers\Payment.cshtml" />
     <Content Remove="Pages\Shared\AboutUs.cshtml" />
   </ItemGroup>
 
@@ -24,8 +25,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
+    <PackageReference Include="PayStack.Net" Version="0.7.7" />
     <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
     <PackageReference Include="Verve.Identity.Core.Service" Version="1.20210816.2" />
   </ItemGroup>
 
@@ -34,17 +37,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Controllers\Payment.cshtml" />
     <_ContentIncludedByDefault Remove="Pages\Shared\AboutUs.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Controllers\Payment.cshtml" />
     <None Include="Pages\AboutUs.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\" />
     <Folder Include="IRepositories\" />
+    <Folder Include="Repository\" />
     <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Controllers\Payment.cshtml" />
   </ItemGroup>
 
 </Project>

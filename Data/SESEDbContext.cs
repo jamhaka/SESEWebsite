@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SESEWebsite.Models;
+using SESEWebsite.Models.Payment;
 
 namespace SESEWebsite.Data
 {
@@ -14,6 +15,7 @@ namespace SESEWebsite.Data
          public DbSet<Course>? Courses { get; set; }
         public DbSet<Enrollments>? Enrollments { get; set; } 
         public DbSet<Instructor>? Instructors { get; set; } 
-        public DbSet<Student>? Students { get; set; }    
+        public DbSet<Student>? Students { get; set; } 
+        public DbSet<TransactionModel>? Transactions { get; set; }
     }
 }

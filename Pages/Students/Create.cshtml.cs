@@ -19,7 +19,7 @@ namespace SESEWebsite.Pages.Students
         {
             _context = context;
         }
-
+        
         public IActionResult OnGet()
         {
             return Page();
