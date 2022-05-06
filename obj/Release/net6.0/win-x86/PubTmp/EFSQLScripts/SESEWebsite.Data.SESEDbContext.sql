@@ -232,3 +232,47 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425105525_[convert]')
+BEGIN
+    ALTER TABLE [Registers] ADD [PhotoInByte] varbinary(max) NOT NULL DEFAULT 0x;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425105525_[convert]')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220425105525_[convert]', N'6.0.3');
+END;
+GO
+
+COMMIT;
+GO
+
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425124100_[convert1]')
+BEGIN
+    DECLARE @var0 sysname;
+    SELECT @var0 = [d].[name]
+    FROM [sys].[default_constraints] [d]
+    INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+    WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Registers]') AND [c].[name] = N'PhotoInByte');
+    IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Registers] DROP CONSTRAINT [' + @var0 + '];');
+    ALTER TABLE [Registers] DROP COLUMN [PhotoInByte];
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425124100_[convert1]')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220425124100_[convert1]', N'6.0.3');
+END;
+GO
+
+COMMIT;
+GO
+

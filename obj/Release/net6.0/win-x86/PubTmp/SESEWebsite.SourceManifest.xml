@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\win-x86\PubTmp\Out\" />
-  <dbfullsql path="C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\SESEWebsite.Data.SESEDbContext.sql" />
+  <IisApp path="C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\SESEWebsite.Data.SESEDbContext.sql" />
 </sitemanifest>

@@ -11200,11 +11200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\SESEWebsite.csproj",
+      "projectUniqueName": "C:\\Users\\JAS CAFE.NG\\Desktop\\Repo\\SESE\\SESEWebsite.csproj",
       "projectName": "SESEWebsite",
-      "projectPath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\SESEWebsite.csproj",
+      "projectPath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Repo\\SESE\\SESEWebsite.csproj",
       "packagesPath": "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\obj\\",
+      "outputPath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Repo\\SESE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JAS CAFE.NG\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,6 +11,7 @@ namespace SESEWebsite.Models
              
         [NotMapped]
         public IFormFile Photo { get; set; }
+
         [Required]
         public string FirstName { get; set;} = string.Empty;
         [Required]
@@ -46,6 +47,25 @@ namespace SESEWebsite.Models
         {
                 FullName = FirstName + " " + LastName + "" + OtherName;
            
+        }
+
+        //Conversion from Image to byte Array
+        public byte[] PhotoInByte { get
+            {
+                return ConvertToByte(Photo);
+            }
+        }
+        private static byte[] ConvertToByte(IFormFile doc)
+        {
+            long documentlength = doc.Length;
+
+            using Stream docFileStream = doc.OpenReadStream();
+            byte[] docInBytes = new byte[documentlength];
+
+            docFileStream.Read(docInBytes, 0, (int)docInBytes.Length);
+            docFileStream.Close();
+
+            return docInBytes;
         }
     }
 }

@@ -8,89 +8,93 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SESEWebsite
 build_property.RootNamespace = SESEWebsite
-build_property.ProjectDir = C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite\
+build_property.ProjectDir = C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\JAS CAFE.NG\Desktop\Jamhaka\Technology\SESEWebsite
+build_property.MSBuildProjectDirectory = C:\Users\JAS CAFE.NG\Desktop\Repo\SESE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/AboutUs.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Courses/Create.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Courses/Delete.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Courses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Courses/Details.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Courses/Edit.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Courses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Courses/Index.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Error.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Index.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Privacy.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Create.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Delete.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Details.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Edit.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/Index.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Students/RegistrationResponse.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Students/RegistrationResponse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcUmVnaXN0cmF0aW9uUmVzcG9uc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/_ViewImports.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/_ViewStart.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Jamhaka/Technology/SESEWebsite/Pages/Shared/_Layout.cshtml]
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hzjdy0naun

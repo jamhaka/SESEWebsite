@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ii7hNfIXmgYCN5oKEBleBZthFPFhwZCLb0iOZ5xoQMabg6TXV7SWDd6bfzMp6NrdigutlSRlDSUnmIWYt+p35w==",
+  "dgSpecHash": "Ej3urCWK+5+zBdixbA+B6+enGbE5+xQ93J42oO+teJ78LRrXx+BsQXFelewgk32IaDzEktfdgkcL5ckULyc28w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Jamhaka\\Technology\\SESEWebsite\\SESEWebsite.csproj",
+  "projectFilePath": "C:\\Users\\JAS CAFE.NG\\Desktop\\Repo\\SESE\\SESEWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\JAS CAFE.NG\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
