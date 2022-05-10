@@ -109,7 +109,7 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220415102855_[real]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220415102855_[real]', N'6.0.3');
+    VALUES (N'20220415102855_[real]', N'6.0.4');
 END;
 GO
 
@@ -212,7 +212,7 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220419153033_[About]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220419153033_[About]', N'6.0.3');
+    VALUES (N'20220419153033_[About]', N'6.0.4');
 END;
 GO
 
@@ -225,7 +225,7 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220420141905_[final]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220420141905_[final]', N'6.0.3');
+    VALUES (N'20220420141905_[final]', N'6.0.4');
 END;
 GO
 
@@ -244,7 +244,7 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425105525_[convert]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220425105525_[convert]', N'6.0.3');
+    VALUES (N'20220425105525_[convert]', N'6.0.4');
 END;
 GO
 
@@ -269,7 +269,7 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220425124100_[convert1]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220425124100_[convert1]', N'6.0.3');
+    VALUES (N'20220425124100_[convert1]', N'6.0.4');
 END;
 GO
 
@@ -297,7 +297,38 @@ GO
 IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220506160025_[Payment]')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20220506160025_[Payment]', N'6.0.3');
+    VALUES (N'20220506160025_[Payment]', N'6.0.4');
+END;
+GO
+
+COMMIT;
+GO
+
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220510095902_[realmuy]')
+BEGIN
+    DECLARE @var1 sysname;
+    SELECT @var1 = [d].[name]
+    FROM [sys].[default_constraints] [d]
+    INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+    WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Transactions]') AND [c].[name] = N'Amount');
+    IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Transactions] DROP CONSTRAINT [' + @var1 + '];');
+    ALTER TABLE [Transactions] ALTER COLUMN [Amount] int NOT NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220510095902_[realmuy]')
+BEGIN
+    ALTER TABLE [Transactions] ADD [Status] bit NOT NULL DEFAULT CAST(0 AS bit);
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220510095902_[realmuy]')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220510095902_[realmuy]', N'6.0.4');
 END;
 GO
 

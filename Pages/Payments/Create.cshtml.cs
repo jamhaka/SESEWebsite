@@ -1,37 +1,50 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿#nullable disable
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PayStack.Net;
 using SESEWebsite.Data;
 using SESEWebsite.Models.Payment;
 
-namespace SESEWebsite.Controllers
+namespace SESEWebsite.Pages.Payments
 {
-    public class PaymentsController : Controller
+    public class CreateModel : PageModel
     {
         private readonly IConfiguration _configuration;
-        private readonly SESEDbContext _context;
+        private readonly SESEWebsite.Data.SESEDbContext _context;
         private readonly string token;
         private PayStackApi PayStack { get; set; }
-        public PaymentsController(IConfiguration configuration, SESEDbContext context)
-        {
-            _configuration = configuration;
-            _context = context;
-            token = _configuration["Payment:PaystackSK"];
-            PayStack = new PayStackApi(token);
 
-        }
-        [HttpGet]
-        public IActionResult Index()
+
+        public CreateModel(IConfiguration configuration,  SESEWebsite.Data.SESEDbContext context)
         {
-            return View();
+            _context = context;
+            _configuration = configuration;
+            token = _configuration["Payment:Paystacks"];
+            PayStack = new PayStackApi(token);
         }
-        [HttpPost]
-        public async Task<IActionResult> Index(PaymentViewModel paymentD) {
+
+        public IActionResult OnGet()
+        {
+            return Page();
+        }
+
+        [BindProperty]
+        public TransactionModel TransactionModel { get; set; }
+
+        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+        public async Task<IActionResult> OnPostAsync(PaymentViewModel paymentD)
+        {
 
 
             TransactionInitializeRequest request = new()
-          
+
             {
-                AmountInKobo = paymentD.Amount*100,
+                AmountInKobo = paymentD.Amount * 100,
                 Email = paymentD.Email,
                 Reference = Generate().ToString(),
                 Currency = "NGN",
@@ -49,27 +62,26 @@ namespace SESEWebsite.Controllers
                 };
                 await _context.Transactions.AddAsync(transaction);
                 await _context.SaveChangesAsync();
-                Redirect(response.Data.AuthorizationUrl);
+               return Redirect(response.Data.AuthorizationUrl);
             }
             ViewData["Error"] = response.Message;
-            return View();
+            return Page();
         }
-    
 
-        public IActionResult PaymentsDetails()
+        public IActionResult PaymentsDetailsOnget()
         {
             var transactions = _context.Transactions.Where(x => x.Status == true).ToList();
             ViewData["transactions"] = transactions;
-            return View();
+            return Page();
         }
-         [HttpGet]
-         public async Task <IActionResult> Verify(string refference)
+        
+        public async Task<IActionResult> VerifyOnget(string refference)
         {
             TransactionVerifyResponse response = PayStack.Transactions.Verify(refference);
-            if(response.Data.Status == "success")
+            if (response.Data.Status == "success")
             {
                 var transaction = _context.Transactions.Where(x => x.TxrRef == refference).FirstOrDefault();
-                if(transaction != null)
+                if (transaction != null)
                 {
                     transaction.Status = true;
                     _context.Transactions.Update(transaction);
@@ -80,11 +92,13 @@ namespace SESEWebsite.Controllers
             ViewData["error"] = response.Data.GatewayResponse;
             return RedirectToAction("Index");
         }
-    public static int Generate()
-    {
-        Random rand = new Random((int)DateTime.Now.Ticks);
-        return rand.Next(100000000, 999999999);
+        public static int Generate()
+        {
+            Random rand = new Random((int)DateTime.Now.Ticks);
+            return rand.Next(100000000, 999999999);
+        }
     }
-    }
+  
 }
+    
 

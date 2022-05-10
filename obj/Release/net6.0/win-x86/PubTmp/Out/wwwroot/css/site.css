@@ -52,3 +52,8 @@ h2{
 im{
     align-content:flex-start;
 }
+
+h3 {
+    color: maroon;
+    text-align: center;
+}
