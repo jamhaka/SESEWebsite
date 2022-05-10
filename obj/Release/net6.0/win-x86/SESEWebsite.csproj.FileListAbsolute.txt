@@ -1232,3 +1232,8 @@ C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\SESEWebsite.dl
 C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\ref\SESEWebsite.dll
 C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\SESEWebsite.pdb
 C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\obj\Release\net6.0\win-x86\SESEWebsite.genruntimeconfig.cache
+C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\bin\Release\net6.0\win-x86\Microsoft.OpenApi.dll
+C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\bin\Release\net6.0\win-x86\PayStack.Net.dll
+C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\bin\Release\net6.0\win-x86\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\bin\Release\net6.0\win-x86\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\JAS CAFE.NG\Desktop\Repo\SESE\bin\Release\net6.0\win-x86\Swashbuckle.AspNetCore.SwaggerUI.dll

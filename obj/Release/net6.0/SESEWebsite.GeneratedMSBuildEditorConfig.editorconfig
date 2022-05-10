@@ -95,12 +95,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Views/Payment/Pay.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXkuY3NodG1s
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Views/Payment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Views/Payment/PaymentIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50SW5kZXguY3NodG1s
+[C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Views/Payment/PaymentsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50c0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JAS CAFE.NG/Desktop/Repo/SESE/Pages/Shared/_Layout.cshtml]

@@ -4,12 +4,17 @@
 *@
 @{
     ViewData["Title"] = "Payment";
-   PaymentViewModel payment = new PaymentViewModel();
+    var error = ViewData["error"] as string;
+    PaymentViewModel payment = new PaymentViewModel();
 }
 <div class="d-flex justify-content-center align-items-center" style="height:80vh;"> 
     <div class="card" style="width:24rem;">
         <div class="card-body">
             <h3 class="card-title text-center">Registration payment</h3>
+            @if (!string.IsNullOrEmpty(error))
+            {
+                <div class="alert alert-danger">@error</div>
+            }
         </div>
         <form method="post" asp-controller="Payment" asp-action="Index" >
             <div class="form-group">

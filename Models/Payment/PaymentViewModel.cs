@@ -4,8 +4,8 @@
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public double Amount { get; set; }
-
+        public int Amount { get; set; }
+        public string TxrRef { get; set; }
 
     }
 }

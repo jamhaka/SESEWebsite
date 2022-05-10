@@ -276,3 +276,31 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220506160025_[Payment]')
+BEGIN
+    CREATE TABLE [Transactions] (
+        [Id] int NOT NULL IDENTITY,
+        [Name] nvarchar(max) NOT NULL,
+        [Amount] float NOT NULL,
+        [Email] nvarchar(max) NOT NULL,
+        [TxrRef] nvarchar(max) NOT NULL,
+        [RegistredDate] datetime2 NOT NULL,
+        [IsDeleted] bit NOT NULL,
+        CONSTRAINT [PK_Transactions] PRIMARY KEY ([Id])
+    );
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220506160025_[Payment]')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220506160025_[Payment]', N'6.0.3');
+END;
+GO
+
+COMMIT;
+GO
+
